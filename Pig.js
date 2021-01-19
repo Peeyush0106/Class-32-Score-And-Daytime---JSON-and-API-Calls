@@ -1,4 +1,4 @@
-class Pig extends BaseClass {
+class Pig extends Base {
   constructor(x, y) {
     super(x, y, 50, 50);
     this.image = loadImage("sprites/enemy.png");
@@ -23,6 +23,9 @@ class Pig extends BaseClass {
   score() {
     if (this.visibility <= 0 && this.visibility > -1000) {
       score++
+    }
+    if (this.visibility <= 0 && this.visibility > -50) {
+      pig_sound.play();
     }
   }
 }

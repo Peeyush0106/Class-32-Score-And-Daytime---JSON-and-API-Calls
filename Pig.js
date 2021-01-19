@@ -24,7 +24,7 @@ class Pig extends Base {
     if (this.visibility <= 0 && this.visibility > -1000) {
       score++
     }
-    if (this.visibility <= 0 && this.visibility > -50) {
+    if (this.visibility < 255 && this.visibility > 250) {
       pig_sound.play();
     }
   }

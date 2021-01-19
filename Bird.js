@@ -31,7 +31,7 @@ class Bird {
 
             for (var i = 0; i < this.trajectory.length; i++) {
                 push();
-                this.smokeVisibility -= 0.05;
+                this.smokeVisibility -= 0.5;
                 tint(255, this.smokeVisibility);
                 image(this.smokeImage, this.trajectory[i][0], this.trajectory[i][1]);
                 pop();
